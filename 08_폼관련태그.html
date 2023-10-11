@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>폼 관련 태그</h1>
+  <p>
+    form 태그는 html에서 사용자가 입력할 수 있는 
+    양식을 제공하는 태그이다. <br>
+    form 태그 내의 input or textarea 태그들을 이용해
+    사용자가 입력한 정보를 서버로 넘긴다.. <br>
+    * action : 폼의 입력된 값을 전송받을 서버의 클래스명을 입력한다 <br>
+    * method : get/post 방식으로 전송 방식을 지정한다 <br>
+    (get 방식은 url 주소에 form 태그들을 통해 넘어가는 데이터가 보임) <br>
+    (post 방식은 url 주소에 form 태그들을 통해 넘어가는 데이터가 보이지 않음)
+  </p>
+  <form action="search" method="get">
+    <input type="text" name="value1" placeholder="값을 입력해주세요"/>
+    <input type="text" name="value2" placeholder="값을 입력해주세요"/>
+    <input type="text" name="value3" placeholder="값을 입력해주세요"/>
+    <input type="text" name="value4" placeholder="값을 입력해주세요"/>
+    <button type="submit">전송</button>
+  </form>
+  <form action="#" method="post">
+    <input type="text" name="test"/>
+    <input type="radio" name="radio" value="1"/>1
+    <input type="radio" name="radio" value="2"/>2
+    <input type="checkbox" name="checkbox" value="A"/>A
+    <input type="checkbox" name="checkbox" value="B"/>B
+    <input type="checkbox" name="checkbox" value="C"/>C
+    <input type="submit" value="전달하기"/> <!--폼 전송말고 아이디 중복 검사하기 등에 사용-->
+
+  </form>
+
+  <form action="#" method="get">
+    <select name="nation">
+      <option value="ko">한국</option>
+      <option value="ch">중국</option>
+      <option value="jp" selected>일본</option>
+    </select>
+    <button>전송</button>
+  </form>
+  <header><!--로고나 제목 배치 헤더 안에 네비 배치--></header>
+  <nav></nav>
+  <main>
+    <aside><!--컨텐츠 외 정보 제공 배너광고, 메뉴 바 등--></aside>
+    <article><!--섹션안에 구분 영역--></article>
+    <section><!--보여줄 영역의 묶음--></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
